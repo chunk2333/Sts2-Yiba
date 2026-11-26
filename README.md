@@ -1,9 +1,9 @@
 # Sts2-Yiba
 
 [![Release](https://img.shields.io/github/v/release/chunk2333/Sts2-Yiba?label=release)](https://github.com/chunk2333/Sts2-Yiba/releases/latest)
-[![License](https://img.shields.io/badge/license-not%20specified-lightgrey)](#免责声明)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-《杀戮尖塔 2》（Slay the Spire 2）的角色 / 卡牌 Mod，基于 [BaseLib](https://github.com/Alchyr/BaseLib) 框架开发。
+《杀戮尖塔 2》（Slay the Spire 2）的角色 / 卡牌 Mod，基于 [BaseLib](https://github.com/Alchyr/BaseLib-StS2) 框架开发。
 
 模组内部 ID 为 `Yiba`，显示名 **Yiba-ZaRou**。当前包含 **25 张卡牌**、**12 个能力（Power）** 与 **1 个共享遗物**，并附带若干 Harmony 补丁用于扩展原版未开放的接口。
 
@@ -13,7 +13,7 @@
 
 ## 安装（玩家）
 
-1. 安装前置 Mod [BaseLib](https://github.com/Alchyr/BaseLib)（**≥ 3.1.2**）。
+1. 安装前置 Mod [BaseLib](https://github.com/Alchyr/BaseLib-StS2)（**≥ 3.1.2**）。
 2. 到 [Releases](https://github.com/chunk2333/Sts2-Yiba/releases/latest) 下载 `Sts2-Yiba-v*.zip`。
 3. 解压出 `Yiba` 文件夹，放到 `Slay the Spire 2/mods/` 下：
 
@@ -80,7 +80,7 @@
 | 项目 | 版本 |
 | --- | --- |
 | Slay the Spire 2 | 支持 Mod 的公开版本（Godot 4.5.1 引擎） |
-| [BaseLib](https://github.com/Alchyr/BaseLib) | ≥ 3.1.2（本项目编译引用 3.4.8） |
+| [BaseLib](https://github.com/Alchyr/BaseLib-StS2) | ≥ 3.1.2（本项目编译引用 3.4.8） |
 | .NET SDK | 9.0 |
 | Godot（MegaDot） | 4.5.1 stable mono — 版本必须与游戏一致，否则 `.pck` 无法加载 |
 | NuGet | `Alchyr.Sts2.BaseLib` 3.4.8、`Alchyr.Sts2.ModAnalyzers` 0.1.9 |
@@ -144,16 +144,23 @@
 
 ## 致谢
 
-- [BaseLib](https://github.com/Alchyr/BaseLib) — Mod 框架与 API
+- [BaseLib](https://github.com/Alchyr/BaseLib-StS2) — Mod 框架与 API
 - MegaDot — 与游戏版本对齐的 4.5.1 mono 版 Godot 编辑器
 - MegaCrit — Slay the Spire 2
 
-## 免责声明
+## 授权与免责声明
 
-本项目为玩家自制同人 Mod，与 MegaCrit Games 无关；游戏素材版权归原公司所有，请勿用于商业用途。
+本项目代码以 [MIT 协议](LICENSE) 开源，可自由使用、修改与二次发布，保留版权声明即可。
+
+需要注意的边界：
+
+- **MIT 只覆盖本仓库的代码与自制素材**，不涉及游戏本体。
+- 《Slay the Spire 2》及其原版素材版权归 MegaCrit Games 所有；本项目为玩家自制同人 Mod，与 MegaCrit 无关，请勿用于商业用途。
+- 依赖的 [BaseLib](https://github.com/Alchyr/BaseLib-StS2) 同样以 MIT 协议发布，需连同其版权声明一起遵守。
+- 如需二次发布修改版，建议换个 Mod ID（`Yiba.json` 的 `id`），避免与官方版本冲突。
 
 ---
 
 ### English
 
-A character/card mod for **Slay the Spire 2**, built on [BaseLib](https://github.com/Alchyr/BaseLib). 25 cards across the Ironclad / Silent / Defect / Regent / Necrobinder / Colorless pools, 12 custom powers, 1 shared relic, plus a Harmony patch layer. Requires .NET 9 SDK, Godot 4.5.1 mono (MegaDot) and BaseLib ≥ 3.1.2. Build with `dotnet build` (DLL + manifest) and `dotnet publish` (Godot pack export) — output goes to `Slay the Spire 2/mods/Yiba/`.
+A character/card mod for **Slay the Spire 2**, built on [BaseLib](https://github.com/Alchyr/BaseLib-StS2). 25 cards across the Ironclad / Silent / Defect / Regent / Necrobinder / Colorless pools, 12 custom powers, 1 shared relic, plus a Harmony patch layer. Requires .NET 9 SDK, Godot 4.5.1 mono (MegaDot) and BaseLib ≥ 3.1.2. Build with `dotnet build` (DLL + manifest) and `dotnet publish` (Godot pack export) — output goes to `Slay the Spire 2/mods/Yiba/`. Released under the [MIT License](LICENSE); Slay the Spire 2 and its original assets remain © MegaCrit Games.
