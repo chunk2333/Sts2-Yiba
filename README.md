@@ -1,5 +1,8 @@
 # Sts2-Yiba
 
+[![Release](https://img.shields.io/github/v/release/chunk2333/Sts2-Yiba?label=release)](https://github.com/chunk2333/Sts2-Yiba/releases/latest)
+[![License](https://img.shields.io/badge/license-not%20specified-lightgrey)](#免责声明)
+
 《杀戮尖塔 2》（Slay the Spire 2）的角色 / 卡牌 Mod，基于 [BaseLib](https://github.com/Alchyr/BaseLib) 框架开发。
 
 模组内部 ID 为 `Yiba`，显示名 **Yiba-ZaRou**。当前包含 **25 张卡牌**、**12 个能力（Power）** 与 **1 个共享遗物**，并附带若干 Harmony 补丁用于扩展原版未开放的接口。
@@ -7,6 +10,24 @@
 ![预览](Yiba/images/card_portraits/big/king_forge.png)
 
 ---
+
+## 安装（玩家）
+
+1. 安装前置 Mod [BaseLib](https://github.com/Alchyr/BaseLib)（**≥ 3.1.2**）。
+2. 到 [Releases](https://github.com/chunk2333/Sts2-Yiba/releases/latest) 下载 `Sts2-Yiba-v*.zip`。
+3. 解压出 `Yiba` 文件夹，放到 `Slay the Spire 2/mods/` 下：
+
+   ```
+   mods/
+   └── Yiba/
+       ├── Yiba.dll
+       ├── Yiba.json
+       └── Yiba.pck
+   ```
+
+4. 启动游戏，在 Mod 列表中确认 Yiba 已启用。
+
+想自己编译请跳到下方「构建」一节。
 
 ## 特性
 
