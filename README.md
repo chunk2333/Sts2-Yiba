@@ -154,13 +154,27 @@
 
 需要注意的边界：
 
-- **MIT 只覆盖本仓库的代码与自制素材**，不涉及游戏本体。
+- **MIT 只覆盖本仓库的代码**，不涉及美术素材，见下方「素材声明」。
 - 《Slay the Spire 2》及其原版素材版权归 MegaCrit Games 所有；本项目为玩家自制同人 Mod，与 MegaCrit 无关，请勿用于商业用途。
 - 依赖的 [BaseLib](https://github.com/Alchyr/BaseLib-StS2) 同样以 MIT 协议发布，需连同其版权声明一起遵守。
 - 如需二次发布修改版，建议换个 Mod ID（`Yiba.json` 的 `id`），避免与官方版本冲突。
+
+## 素材声明
+
+本项目使用的**卡牌立绘、能力图标、遗物图标**等图片素材，来源情况如下：
+
+- **部分图片由 AI 生成**（Stable Diffusion / ComfyUI 等模型出图后经手工修整）。
+- **部分图片来自互联网**公开渠道获取，并非完全原创，原始出处与授权信息未逐一记录。
+- 上述图片**不在 [MIT 协议](LICENSE) 的授权范围内**，版权归各自原作者所有；本项目仅将其用于**免费、非商业**的同人 Mod，不对其主张任何权利。
+- 本仓库的代码（`YibaCode/`、`MainFile.cs` 等）、本地化文本与自制素材，仍按 MIT 协议授权。
+
+**如果你是某张图片的权利人**，或不希望自己的作品出现在本项目中，请通过 [Issues](https://github.com/chunk2333/Sts2-Yiba/issues) 告知，我会在确认后**立即替换或移除**相关素材。同样，若发现本项目误用了游戏原版资源，也请一并告知，我会尽快处理。
+
+> 简单说：代码随便用（MIT），图是借来的/AI 画的，只做免费同人分享，有问题找我就删。
+
 
 ---
 
 ### English
 
-A character/card mod for **Slay the Spire 2**, built on [BaseLib](https://github.com/Alchyr/BaseLib-StS2). 25 cards across the Ironclad / Silent / Defect / Regent / Necrobinder / Colorless pools, 12 custom powers, 1 shared relic, plus a Harmony patch layer. Requires .NET 9 SDK, Godot 4.5.1 mono (MegaDot) and BaseLib ≥ 3.1.2. Build with `dotnet build` (DLL + manifest) and `dotnet publish` (Godot pack export) — output goes to `Slay the Spire 2/mods/Yiba/`. Released under the [MIT License](LICENSE); Slay the Spire 2 and its original assets remain © MegaCrit Games.
+A character/card mod for **Slay the Spire 2**, built on [BaseLib](https://github.com/Alchyr/BaseLib-StS2). 25 cards across the Ironclad / Silent / Defect / Regent / Necrobinder / Colorless pools, 12 custom powers, 1 shared relic, plus a Harmony patch layer. Requires .NET 9 SDK, Godot 4.5.1 mono (MegaDot) and BaseLib ≥ 3.1.2. Build with `dotnet build` (DLL + manifest) and `dotnet publish` (Godot pack export) — output goes to `Slay the Spire 2/mods/Yiba/`. Released under the [MIT License](LICENSE); Slay the Spire 2 and its original assets remain © MegaCrit Games. Note that the card portraits, power icons and relic icons are **partly AI-generated and partly sourced from the internet**, and are therefore **not** covered by the MIT license — rights belong to their respective authors.
